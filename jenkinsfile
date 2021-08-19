@@ -8,7 +8,9 @@ pipeline {
 
     stages {
         stage('Preparation') {
-              env.PATH = env.PATH + ";c:\\Windows\\System32"
+            steps{
+                env.PATH = env.PATH + ";c:\\Windows\\System32"
+            }
         }
        
         stage('Build') {
